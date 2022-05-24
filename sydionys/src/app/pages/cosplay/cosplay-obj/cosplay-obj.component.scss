@@ -1,0 +1,23 @@
+@import "../../../style/index";
+.cosplay-item{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+
+    margin: 2.5%;
+    padding: 2.5%;
+
+    background-color: $color-content;
+    color: textColor($color-content);
+    img{
+        height: 10rem;
+        width: 10rem;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+    }
+    &__info {
+        padding-left: 1rem;
+    }
+}

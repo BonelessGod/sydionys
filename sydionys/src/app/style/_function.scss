@@ -1,0 +1,16 @@
+// function that change the color of the text depending of the background color
+
+@function textColor($color) {
+
+    $darkness: lightness($color);
+
+
+    @if $darkness <= 50 {
+        @return $color-text-light;
+
+    } @else {
+        @return $color-text-dark;
+
+    }
+
+}
