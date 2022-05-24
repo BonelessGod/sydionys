@@ -7,11 +7,15 @@
     margin: 2.5%;
     padding: 2.5%;
 
-    background-color: $color-content;
-    color: textColor($color-content);
+    background: $color-main;
+    color: textColor($color-main);
+
+    @include boxShadowStyle;
+
     img{
         height: 10rem;
         width: 10rem;
+        border-radius: 1rem;
     }
     &__info{
         display: flex;

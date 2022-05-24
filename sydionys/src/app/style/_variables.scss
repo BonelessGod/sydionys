@@ -1,5 +1,14 @@
-$color-main: red;
-$color-content: rgb(73, 16, 16);
+$color-main: #3e416d;
+$color-second: #ad214b;
+
+$color-lighter: lighten($color-main, 15);
+$color-darker: darken($color-main, 15);
 
 $color-text-dark: #000;
 $color-text-light: #fff;
+
+$box-shadow-value: 12px;
+$box-shadow-blur: 24px;
+
+$box-shadow: ($box-shadow-value) ($box-shadow-value) ($box-shadow-blur) $color-lighter,
+(- $box-shadow-value) (- $box-shadow-value) ($box-shadow-blur) $color-darker;
